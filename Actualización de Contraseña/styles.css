@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image:url("mascotas.jpg");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box {
+    width: 400px;
+    padding:40px;
+    background: rgb(253, 253, 253);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form-title {
+    color: rgb(31, 27, 27);
+    text-transform: none;
+    font-weight: 200;
+
+}
+
+.form-subtitle{
+    color: rgb(31, 27, 27);
+    text-transform: none;
+    text-align: left;
+}
+
+.form-box input[type="text"], 
+.form-box button[type="submit"] {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #8f37fa;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(11, 10, 10);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: #8f37fa;
+}
+
+.form-box button[type="submit"] {
+    border: 0;
+    background: #6b6b75;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #6b6b75;
+    padding: 14px 40px;
+    outline: none;
+    color: rgba(229, 211, 240, 0.977);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+    background: none;
+}
