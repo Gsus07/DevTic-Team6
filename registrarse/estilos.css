@@ -1,0 +1,131 @@
+body{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family:'Raleway', sans-serif;
+    margin: 0;
+    background-image:url(../final/ingreso.jpg)
+}
+
+a{
+    text-decoration: none;
+    color: rgb(7, 211, 211);
+}
+
+header{
+    display: flex;
+    min-height: 10px;
+    background-color: rgba(255, 255, 255, 0.233);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px ;
+}
+nav a{
+    font-weight: 600;
+    padding: 10px;   
+}
+nav a:hover {
+    color: rgb(144, 240, 240);
+
+}
+
+@media (max-widht: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+nav {
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+.form-box {
+    margin: 40px auto; width: 200px; 
+    width: 400px;
+    padding: 40px;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form-title {
+    color: rgb(31, 27, 27);
+    text-transform: none;
+    font-weight: 200;
+
+}
+
+.form-subtitle{
+    color: rgb(31, 27, 27);
+    text-transform: none;
+    text-align: left;
+}
+
+.form-box input[type="nombre completo"], .form-box input[type="direccion"],.form-box input[type="correo"],.form-box input[type="contraseña"],.form-box button[type="submit"] {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #faf737;
+    padding: 7px 80px;
+    width: 200px;
+    outline: none;
+    color: rgb(58, 55, 55);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.form-box input[type="nombre completo"]:focus, .form-box input[type="direccion"]:focus, .form-box input[type="correo"]:focus, .form-box input[type="contraseña"]:focus {
+    width: 150px;
+    border-color: #ffffff;
+}
+
+.form-box button[type="submit"]{
+    border: 0;
+    background: #6b6b75;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid #6b6b75;
+    padding: 7px 20px;
+    outline: none;
+    color: white;
+    border-radius: 12px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="cuidador"] {
+    border: 0;
+    background: #6b6b75;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #6b6b75;
+    padding: 7px 20px;
+    outline: none;
+    color: white;
+    border-radius: 12px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover , .form-box button[type="cuidador"]:hover {
+    background: none;
+}
